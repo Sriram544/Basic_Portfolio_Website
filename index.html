@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/cb97602604.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Portfolio/logo.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Full Stack Web Developer</p>
+                    <h1>Hi, I'm <span>Sriram</span><br>Palnati from India</h1>
+                </div>
+            </div>
+
+        </div>
+        <!-----------about---------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Portfolio/user.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm a passionate full stack web developer 
+                            and Python enthusiast, currently pursuing 
+                            a B.Tech at Srinivasa Institute of Engineering 
+                            and Technology. With hands-on experience from 
+                            internships at Octanet and Oasis Infobyte, I've 
+                            built numerous landing pages and websites, 
+                            showcasing a knack for both front-end and 
+                            back-end development. Now interning at 
+                            Slash Mark, I continue to refine my skills,
+                             combining academic knowledge with real-world
+                              applications to create seamless and efficient 
+                              web solutions.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Web Development</span><br>Web App Development</li>
+                                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                    <li><span>App Development</span><br>Building Android/iOS apps</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2024 - Current</span><br>Full Stack Web Development Intern at Slash Mark.</li>
+                                    <li><span>5/1/2024 - 5/2/2024</span><br>Python Programming Intern at Oasis Infobyte for 1 month.</li>
+                                    <li><span>1/10/2023 - 1/11/2023</span><br>Web Development Intern at Octanet Services Pvt ltd for 1 month.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2024 - Current</span><br>Computer Science Student at 
+                                        Srinivasa Institute of Engineering and Technology(Autonomus), Amalapuram.</li>
+                                    <li><span>2021</span><br>Higher Secondary Education at SriChaitanya Junior College, Amalapuram.</li>
+                                    <li><span>2019</span><br>Secondary Education at Pragathi Vidhya Nikethan E.M School, Ainavilli.</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------Services----------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>As a passionate web designer, I see it as painting
+                             a digital canvas, blending creativity with
+                              functionality. Crafting captivating landing pages 
+                              is like staging a performance—it instantly grabs 
+                              attention and invites exploration. Every detail, 
+                              from colors to layout, evokes emotions and 
+                              communicates messages. But beyond looks, I 
+                              prioritize usability, ensuring seamless navigation
+                               and intuitive interactions. Ultimately, my goal is
+                                to create meaningful connections and memorable
+                                 experiences for visitors.</p>
+                            <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>In the realm of UI/UX design, I'm all about creating 
+                            digital experiences that feel like second nature.
+                             With a focus on intuitive interfaces and seamless 
+                             interactions, I put users at the forefront of every
+                              design decision. Whether it's crafting clean UI designs
+                               or mapping out user journeys, my goal is to make every
+                                interaction feel natural and effortless.</p>
+                            <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>In app design, I'm all about creating seamless experiences. 
+                            From wireframing to prototyping, I craft interfaces that are
+                             both beautiful and intuitive. With a focus on user needs, 
+                             I aim to exceed expectations at every turn.</p>
+                            <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------Portfolio-------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Portfolio/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                Download it from play store.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Portfolio/work-2.png">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                Download it from play store.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Portfolio/work-3.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                Download it from play store.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> palantisriram116@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> +91 9441735227</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/palnati.sriram.79"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://x.com/urstrulysriram2?t=zfPdEJg_QM900pRDvKp6-g&s=08 "><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/name__is__sriram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/sriram-palnati"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Sriram544"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="Portfolio/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright ©️ by <i class="fa-solid fa-heart">  Sriram Palnati</i></p>
+            </div>
+        </div>
+
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbztn7WlJbothWO1yfmvN4EpmDthBJHfJRIrNqCEJAlhksxRbpFgTDpLqZXDZ2lqoMv5qw/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },2000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
